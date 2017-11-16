@@ -1,0 +1,47 @@
+.menu{
+  display: flex;
+  border
+}
+.website{
+  display: flex;
+  flex-direction: column;
+}
+.website .header{
+  display: flex;
+  flex-direction: row;
+}
+.name1{
+  position: absolute;
+  left: 25px;
+  top: 60px; 
+  display: flex;
+  border: 2px solid purple;
+  font-weight: italic;
+  background: #006400;
+  color: #F0FFF0;
+  flex: 3;
+  padding: 1em;
+  z-index: -1;
+}
+.School{
+  display: flex;
+  margin: 4px;
+  padding: 0px;
+  border: 2px solid purple;
+  flex-direction:column;
+}
+.School:before{
+  font-weight: bold;
+  background: #006400;
+  color: #FFFFFF;
+}
+
+.School, .School:before{
+  flex: 1;
+  padding: 1em;
+}
+
+.button{
+  display: flex 1;
+}
+
