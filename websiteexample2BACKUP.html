@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.category1{
+border: 2px solid purple;
+display: flex;
+flex-direction: row;
+padding: 1em;
+margin: 4px;
+background: #0000CD;
+font-weight: bold;
+color: #FFD700;
+padding: 16px 32px;
+}
+.category1:hover, .category1:focus {
+  background-color: #00009b;
+}
+.dropdown1 {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content1 {
+display: none;
+position: absolute;
+background-color: #0000CD;
+border: 2px solid purple;
+min-width: 160px;
+overflow: auto;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+font-weight: bold;
+color: #FFD700;
+}
+.dropdown-content1 a {
+  color: #FFD700;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown1 a:hover {
+  background-color: #00009b;
+}
+.show1{
+  display: block;
+}
+.category2{
+border: 2px solid purple;
+display: flex;
+flex-direction: row;
+padding: 1em;
+margin: 4px;
+background: #0000CD;
+font-weight: bold;
+color: #FFD700;
+padding: 16px 32px;
+}
+.category2:hover, .categor2:focus {
+  background-color: #00009b;
+}
+.dropdown2 {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content2 {
+display: none;
+position: absolute;
+background-color: #0000CD;
+border: 2px solid purple;
+min-width: 160px;
+overflow: auto;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+font-weight: bold;
+color: #FFD700;
+}
+.dropdown-content2 a {
+  color: #FFD700;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown2 a:hover {
+  background-color: #00009b;
+}
+.show2{
+  display: block;
+}
+.category3{
+border: 2px solid purple;
+display: flex;
+flex-direction: row;
+padding: 1em;
+margin: 4px;
+background: #0000CD;
+font-weight: bold;
+color: #FFD700;
+padding: 16px 32px;
+}
+.category3:hover, .category3:focus {
+  background-color: #00009b;
+}
+.dropdown3 {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content3 {
+display: none;
+position: absolute;
+background-color: #0000CD;
+border: 2px solid purple;
+min-width: 160px;
+overflow: auto;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+font-weight: bold;
+color: #FFD700;
+}
+.dropdown-content3 a {
+  color: #FFD700;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown3 a:hover {
+  background-color: #00009b;
+}
+.show3{
+  display: block;
+}
+</style>
+</head>
+
+<body>
+<h1>Website Hub</h1>
+<p>Click a button for a dropdown menu</p>
+
+<div class="dropdown1">
+  <button onclick="myFunction()" class="category1">School</button>
+  <div id="myDropdown" class="dropdown-content1">
+    <a href= "https://mail.google.com/mail/u/0/" type="button1">Email</a>
+    <a href = "https://drive.google.com/drive/my-drive" type="button1">Google Drive</a>
+    <a href = "https://classroom.google.com/u/0/h" type="button1">Google Classroom</a>
+    <a href = "https://bb.courses.maine.edu/webapps/blackboard/execute/modulepage/view?course_id=_82112_1&cmp_tab_id=_157763_1&mode=view" type="button1">Blackboard</a>
+    <a href = "https://mycampus.maine.edu/group/mycampus/home" type="button1">AP4ALL</a>
+  </div>
+</div>
+
+<div class="dropdown2">
+  <button onclick="myFunction2()" class="category2">News</button>
+  <div id="myDropdown2" class="dropdown-content2">
+    <a href= "https://www.npr.org/" type="button1">NPR</a>
+    <a href = "https://www.newyorker.com/" type="button1">The New Yorker</a>
+    <a href = "http://www.pressherald.com/" type="button1">Portland Press</a>
+    <a href= "https://www.theonion.com/" type="button1">The Onion</a>
+  </div>
+</div>
+
+<div class="dropdown3">
+  <button onclick="myFunction3()" class="category3">Other</button>
+  <div id="myDropdown3" class="dropdown-content3">
+    <a href= "https://www.youtube.com/" type="button1">Youtube</a>
+    <a href = "https://www.reddit.com/" type="button1">Reddit</a>
+    <a href = "https://www.amazon.com/" type="button1">Amazon</a> 
+    <a href= "https://en.wikipedia.org/wiki/Salami" type="button1">Salami</a>
+  </div>
+</div>
+
+<script>
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show1");
+}
+window.onclick = function(event) {
+  if (!event.target.matches('.category1')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content1");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show1')) {
+        openDropdown.classList.remove('show1');
+      }
+    }
+  }
+}
+
+function myFunction2() {
+  document.getElementById("myDropdown2").classList.toggle("show2");
+}
+window.onclick = function(event) {
+  if (!event.target.matches('.category2')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content2");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show2')) {
+        openDropdown.classList.remove('show2');
+      }
+    }
+  }
+}
+
+function myFunction3() {
+  document.getElementById("myDropdown3").classList.toggle("show3");
+}
+window.onclick = function(event) {
+  if (!event.target.matches('.category3')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content3");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show3')) {
+        openDropdown.classList.remove('show3');
+      }
+    }
+  }
+}
+</script>
+
+</body>
+</html>
+
+
